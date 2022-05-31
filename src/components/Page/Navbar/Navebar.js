@@ -4,14 +4,15 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
     return (
       <div>
-        <h1>This is navbar</h1>
-
-        <nav>
+        <nav className="bg-primary">
           {/* navbar start */}
-          <div class="navbar bg-primary text-base-100">
+          <div class="container mx-auto navbar bg-primary text-base-100">
             {/*darawer btn */}
             <div class="drawer-content flex flex-col items-center justify-center">
-              <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">
+              <label
+                for="my-drawer-2"
+                class="btn btn-primary drawer-button lg:hidden text-white"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -29,9 +30,10 @@ const Navbar = () => {
             </div>
             {/* navbar content */}
             <div class="flex-1">
-              <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+              <a class="btn btn-ghost normal-case text-xl">My Dashboard</a>
             </div>
             <div class="flex-none">
+              
               <div class="dropdown dropdown-end">
                 <label tabindex="0" class="btn btn-ghost btn-circle">
                   <div class="indicator">
@@ -52,15 +54,18 @@ const Navbar = () => {
                     <span class="badge badge-sm indicator-item">8</span>
                   </div>
                 </label>
+
                 <div
                   tabindex="0"
-                  class="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow"
+                  class="mt-3 card card-compact dropdown-content w-52 bg-primary shadow"
                 >
                   <div class="card-body">
                     <span class="font-bold text-lg">8 Items</span>
                     <span class="text-info">Subtotal: $999</span>
                     <div class="card-actions">
-                      <button class="btn btn-primary btn-block">View cart</button>
+                      <button class="btn btn-secondary btn-block text-base-100">
+                        View cart
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -73,7 +78,7 @@ const Navbar = () => {
                 </label>
                 <ul
                   tabindex="0"
-                  class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+                  class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-primary rounded-box w-52"
                 >
                   <li>
                     <a class="justify-between">
@@ -92,8 +97,6 @@ const Navbar = () => {
             </div>
           </div>
         </nav>
-
-       
       </div>
     );
 };
