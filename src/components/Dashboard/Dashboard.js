@@ -1,12 +1,21 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
+
 
 const Dashboard = () => {
     return (
       <div>
         <div class="drawer drawer-mobile ">
           <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
-
+          <div class="drawer-content ">
+            {/* <!-- Page content here --> */}
+            <h1 className="text-3xl font-bold text-center text-primary ">
+              Welcome to your Dashboard
+            </h1>
+            <div className="container mx-auto">
+              <Outlet />
+            </div>
+          </div>
           <div class="drawer-side ">
             <label for="my-drawer-2" class="drawer-overlay y"></label>
             <ul class="menu p-4 overflow-y-auto w-80 bg-primary text-white">
@@ -18,18 +27,16 @@ const Dashboard = () => {
                 </div>
                 <div class="collapse-content bg-primary text-base-100 peer-checked:bg-primary peer-checked:text-base-100-content">
                   <li>
-                    <NavLink to="/">
-                     Analytics
-                    </NavLink>
+                    <NavLink to="/dashboard/analytics">Analytics</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/crm">CRM</NavLink>
+                    <NavLink to="/dashboard/crm">CRM</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/helpdesk">Helpdesk</NavLink>
+                    <NavLink to="/dashboard/helpdesk">Helpdesk</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/Sales">Sales</NavLink>
+                    <NavLink to="/dashboard/Sales">Sales</NavLink>
                   </li>
                 </div>
               </div>
