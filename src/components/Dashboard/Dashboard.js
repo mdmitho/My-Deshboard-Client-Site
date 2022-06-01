@@ -5,7 +5,7 @@ import { NavLink, Outlet } from 'react-router-dom';
 const Dashboard = () => {
     return (
       <div>
-        <div class="drawer drawer-mobile ">
+        <div class="drawer drawer-mobile fixed">
           <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
           <div class="drawer-content ">
             {/* <!-- Page content here --> */}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+
 
 const Navbar = () => {
     return (
@@ -30,7 +30,7 @@ const Navbar = () => {
             </div>
             {/* navbar content */}
             <div class="flex-1">
-              <a class="btn btn-ghost normal-case text-xl">My Dashboard</a>
+              <a class="btn btn-ghost normal-case text-xl">Dashboard</a>
             </div>
             <div class="flex-none">
               

@@ -1,21 +1,14 @@
 import React from 'react';
+import AnalyticsCard from './AnalyticsCard/AnalyticsCard';
 
 const Analytics = () => {
     return (
+
         <div>
-            <h1>Analytics</h1>
-            <h1>Analytics</h1>
-            <h1>Analytics</h1>
-            <h1>Analytics</h1>
-            <h1>Analytics</h1>
-            <h1>Analytics</h1>
-            <h1>Analytics</h1>
-            <h1>Analytics</h1>
-            <h1>Analytics</h1>
-            <h1>Analytics</h1>
-            <h1>Analytics</h1>
-            <h1>Analytics</h1>
-            <h1>Analytics</h1>
+
+  <AnalyticsCard></AnalyticsCard>
+
+     
         </div>
     );
 };
